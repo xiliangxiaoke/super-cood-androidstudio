@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     <!-- origin data input panel -->
+     <RelativeLayout android:id="@+id/ac_coord_convert_origin_panel"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="100dp"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         >
+         <TextView android:id="@+id/ac_coord_convert_origin_input_tip"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text=""
+             android:textColor="#FFFFFFFF"/>
+         <RelativeLayout android:id="@+id/origin_lng_panel"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/ac_coord_convert_origin_input_tip">
+             <TextView android:id="@+id/ac_coord_convert_origin_lng_txt"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="#FFFFFFFF"
+                 android:text="经度："/>
+             <EditText android:id="@+id/ac_coord_convert_origin_lng_etxt"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="#FFFFFFFF"
+                 android:numeric="decimal"
+                 android:layout_toRightOf="@id/ac_coord_convert_origin_lng_txt"/>
+         </RelativeLayout>
+         <RelativeLayout android:id="@+id/origin_lat_panel"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/origin_lng_panel">
+             <TextView android:id="@+id/ac_coord_convert_origin_lat_txt"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textColor="#FFFFFFFF"
+                 android:text="纬度："/>
+             <EditText android:id="@+id/ac_coord_convert_origin_lat_etxt"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:numeric="decimal"
+                 android:textColor="#FFFFFFFF"
+                 android:layout_toRightOf="@id/ac_coord_convert_origin_lat_txt"/>
+         </RelativeLayout>
+     </RelativeLayout>
+     
+     <!-- show result panel -->
+     <RelativeLayout android:id="@+id/ac_coord_convert_result_panel"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="50dp"
+         android:layout_marginLeft="50dp"
+         android:layout_marginRight="50dp"
+         android:layout_below="@id/ac_coord_convert_origin_panel"
+         >
+         <LinearLayout android:id="@+id/ac_coord_convert_result_list"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <TextView android:id="@+id/ac_coord_convert_result_WGS84"
+	            android:text="GPS84原始坐标:正在计算..."
+	            style="@style/ac_result_type_txt"
+	            />
+	        <TextView android:id="@+id/ac_coord_convert_result_GCJ02"
+	            android:text="GCJ02国测局:正在计算..."
+	            style="@style/ac_result_type_txt"
+	            />
+	        <TextView android:id="@+id/ac_coord_convert_result_BAIDU"
+	            android:text="百度地图:正在计算..."
+	            style="@style/ac_result_type_txt"
+	            />
+	        <TextView android:id="@+id/ac_coord_convert_result_GOOGLE_EARTH"
+	            android:text="GOOGLE Earth:正在计算..."
+	            style="@style/ac_result_type_txt"
+	            />
+	        <TextView android:id="@+id/ac_coord_convert_result_GOOGLE_MAP"
+	            android:text="GOOGLE地图:正在计算..."
+	            style="@style/ac_result_type_txt"
+	            />
+	        <TextView android:id="@+id/ac_coord_convert_result_GPS_DEVICE"
+	            android:text="GPS设备:正在计算..."
+	            style="@style/ac_result_type_txt"
+	            />
+	        <TextView android:id="@+id/ac_coord_convert_result_AMAP"
+	            android:text="高德地图:正在计算..."
+	            style="@style/ac_result_type_txt"
+	            />
+	        <TextView android:id="@+id/ac_coord_convert_result_TECENT"
+	            android:text="腾讯地图:正在计算..."
+	            style="@style/ac_result_type_txt"
+	            />
+	        
+         </LinearLayout>
+         
+         <!-- do convert button -->
+         <TextView android:id="@+id/ac_coord_convert_result_doConvert"
+	            android:text="进行计算"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"	
+	            android:layout_below="@id/ac_coord_convert_result_list" 
+	            android:textColor="#FFFFFFFF"           
+	            />
+         <TextView android:id="@+id/ac_coord_convert_result_back"
+	            android:text="返回"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"	 
+	            android:layout_below="@id/ac_coord_convert_result_doConvert"      
+	            android:textColor="#FFFFFFFF"     
+	            />
+     </RelativeLayout>
+    
+
+</RelativeLayout>

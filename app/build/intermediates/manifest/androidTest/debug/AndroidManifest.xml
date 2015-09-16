@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="club.xiaoke.supercood.test">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="21" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="club.xiaoke.supercood"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for club.xiaoke.supercood"/>
+</manifest>

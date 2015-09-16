@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="club.xiaoke.supercood.MainActivity" >
+    
+    
+    <TextView android:id="@+id/mainactivity_coord_type_tip"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:text="@string/ac_main_tip"
+        android:textColor="#fff" />
+
+    
+    
+    <LinearLayout android:id="@+id/mainactivity_coord_type_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        >
+        <TextView android:id="@+id/mainac_type_WGS84"
+            android:text="GPS84原始坐标"
+            style="@style/ac_main_type_txt"
+            />
+        <TextView android:id="@+id/mainac_type_GCJ02"
+            android:text="GCJ02国测局"
+            style="@style/ac_main_type_txt"
+            />
+        <TextView android:id="@+id/mainac_type_BAIDU"
+            android:text="百度地图"
+            style="@style/ac_main_type_txt"
+            />
+        <TextView android:id="@+id/mainac_type_GOOGLE_EARTH"
+            android:text="GOOGLE地球"
+            style="@style/ac_main_type_txt"
+            />
+        <TextView android:id="@+id/mainac_type_GOOGLE_MAP"
+            android:text="GOOGLE地图"
+            style="@style/ac_main_type_txt"
+            />
+        <TextView android:id="@+id/mainac_type_GPS_DEVICE"
+            android:text="GPS设备"
+            style="@style/ac_main_type_txt"
+            />
+        <TextView android:id="@+id/mainac_type_AMAP"
+            android:text="高德地图"
+            style="@style/ac_main_type_txt"
+            />
+        <TextView android:id="@+id/mainac_type_TECENT"
+            android:text="腾讯地图"
+            style="@style/ac_main_type_txt"
+            />
+    </LinearLayout>
+    
+    
+
+</RelativeLayout>
